@@ -1,0 +1,25 @@
+{
+  "name": "blackboxprogramming.io",
+  "org": "BlackRoad-OS-Inc",
+  "category": "devtools",
+  "title": "BlackBox Programming",
+  "deploy": {
+    "target": "gematria",
+    "path": "/var/www/blackroad/blackboxprogramming.io",
+    "ssl": "auto",
+    "cdn": true
+  },
+  "mirrors": {
+    "gitea": "https://git.blackroad.io/BlackRoad-OS-Inc/blackboxprogramming.io",
+    "github": "https://github.com/BlackRoad-OS-Inc/blackboxprogramming.io"
+  },
+  "ci": {
+    "on_push": ["build", "deploy"],
+    "on_pr": ["lint", "audit"]
+  },
+  "monitoring": {
+    "uptime": true,
+    "analytics": "roadanalytics",
+    "alerts": "nats"
+  }
+}
