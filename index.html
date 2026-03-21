@@ -130,6 +130,16 @@ footer{border-top:1px solid var(--border);padding:48px;display:flex;justify-cont
   .topnav-links{gap:8px;flex-wrap:wrap}
   .topnav-links a{font-size:11px}
 }
+/* Animated Spectrum Bars Logo */
+@keyframes barPulse{0%,100%{opacity:1;transform:scaleY(1)}50%{opacity:.5;transform:scaleY(.7)}}
+.br-bars{display:flex;gap:2px;align-items:center}
+.br-bars span{width:3px;height:18px;border-radius:2px;display:inline-block}
+.br-bars span:nth-child(1){background:#FF6B2B;animation:barPulse 2.5s ease-in-out 0s infinite}
+.br-bars span:nth-child(2){background:#FF2255;animation:barPulse 2.5s ease-in-out .15s infinite}
+.br-bars span:nth-child(3){background:#CC00AA;animation:barPulse 2.5s ease-in-out .3s infinite}
+.br-bars span:nth-child(4){background:#8844FF;animation:barPulse 2.5s ease-in-out .45s infinite}
+.br-bars span:nth-child(5){background:#4488FF;animation:barPulse 2.5s ease-in-out .6s infinite}
+.br-bars span:nth-child(6){background:#00D4FF;animation:barPulse 2.5s ease-in-out .75s infinite}
 </style>
 <script src="https://bb.blackroad.io/bb.js" defer></script>
 <meta name="keywords" content="BlackRoad, sovereign technology, edge computing, AI agents, Cloudflare Workers">
@@ -174,7 +184,7 @@ footer{border-top:1px solid var(--border);padding:48px;display:flex;justify-cont
 <div class="grad-bar"></div>
 
 <nav>
-  <div class="nav-logo"><img src="blackroad-logo.png" alt="BlackRoad" style="width:32px;height:32px;border-radius:50%"> BlackRoad</div>
+  <div class="nav-logo"><div class="br-bars"><span></span><span></span><span></span><span></span><span></span><span></span></div> BlackRoad</div>
   <div class="nav-links">
     <a href="https://blackroad-io.pages.dev">Product</a>
     <a href="https://blackroad-docs-hub.pages.dev">Docs</a>
