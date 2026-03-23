@@ -1,5 +1,13 @@
 # blackboxprogramming.io
 
+> BlackRoad OS, Inc. — blackboxprogramming.io domain repo. Proprietary.
+
+Part of the [BlackRoad OS](https://blackroad.io) ecosystem — [BlackRoad-OS-Inc](https://github.com/BlackRoad-OS-Inc)
+
+---
+
+# blackboxprogramming.io
+
 > BlackBox — an AI coding assistant that runs on your hardware.
 
 **Live at [https://blackboxprogramming.io](https://blackboxprogramming.io)**
